@@ -18,6 +18,16 @@ namespace Numerics
             };
         }
 
+        public static Vector3 operator +(Int3 a, Vector3 b)
+        {
+            return new Vector3
+            {
+                X = a.X + b.X,
+                Y = a.Y + b.Y,
+                Z = a.Z + b.Z
+            };
+        }
+
         public static Vector3 operator *(Int3 a, float b)
         {
             return new Vector3(a.X * b, a.Y * b, a.Z * b);

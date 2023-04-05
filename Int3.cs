@@ -46,6 +46,13 @@ namespace Numerics
             Z = 0
         };
 
+        public static readonly Int3 Zero = new()
+        {
+            X = 0,
+            Y = 0,
+            Z = 0
+        };
+
         public int X;
         public int Y;
         public int Z;

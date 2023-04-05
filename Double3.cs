@@ -118,6 +118,16 @@ namespace Numerics
             };
         }
 
+        public static Double3 operator *(Double3 a, float b)
+        {
+            return new Double3
+            {
+                X = a.X * b,
+                Y = a.Y * b,
+                Z = a.Z * b
+            };
+        }
+
         public static Double3 operator *(double a, Double3 b)
         {
             return new Double3

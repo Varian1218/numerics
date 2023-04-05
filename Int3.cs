@@ -135,6 +135,16 @@ namespace Numerics
             };
         }
 
+        public static Vector3 operator *(float a, Int3 b)
+        {
+            return new Vector3
+            {
+                X = a * b.X,
+                Y = a * b.Y,
+                Z = a * b.Z
+            };
+        }
+
         public static bool operator ==(Int3 a, Int3 b)
         {
             return a.X == b.X && a.Y == b.Y && a.Z == b.Z;

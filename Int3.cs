@@ -25,7 +25,7 @@ namespace Numerics
             Z = 1
         };
 
-        public static readonly Int3[] FourStep;
+        public static readonly Int3[] FourDirs;
 
         public static readonly Int3 Left = new()
         {
@@ -61,7 +61,7 @@ namespace Numerics
 
         static Int3()
         {
-            FourStep = new[]
+            FourDirs = new[]
             {
                 Back,
                 Forward,

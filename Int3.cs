@@ -124,5 +124,10 @@ namespace Numerics
         {
             return a.X != b.X && a.Y != b.Y && a.Z != b.Z;
         }
+
+        public static implicit operator Vector3(Int3 value)
+        {
+            return new Vector3(value.X, value.Y, value.Z);
+        }
     }
 }

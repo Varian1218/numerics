@@ -52,5 +52,15 @@ namespace Numerics
                 Z = a.Z * b
             };
         }
+
+        public static bool operator==(Int3 a, Int3 b)
+        {
+            return a.X == b.X && a.Y == b.Y && a.Z == b.Z;
+        }
+
+        public static bool operator !=(Int3 a, Int3 b)
+        {
+            return a.X != b.X && a.Y != b.Y && a.Z != b.Z;
+        }
     }
 }

@@ -98,6 +98,16 @@ namespace Numerics
             };
         }
 
+        public static Double3 operator -(Vector3 a, Double3 b)
+        {
+            return new Double3
+            {
+                X = a.X - b.X,
+                Y = a.Y - b.Y,
+                Z = a.Z - b.Z
+            };
+        }
+
         public static Double3 operator *(Double3 a, double b)
         {
             return new Double3

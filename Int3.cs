@@ -80,6 +80,16 @@ namespace Numerics
             };
         }
 
+        public static Double3 operator +(Int3 a, Double3 b)
+        {
+            return new Double3
+            {
+                X = a.X + b.X,
+                Y = a.Y + b.Y,
+                Z = a.Z + b.Z
+            };
+        }
+
         public static Vector3 operator +(Int3 a, Vector3 b)
         {
             return new Vector3
@@ -112,6 +122,16 @@ namespace Numerics
                 X = a.X * b,
                 Y = a.Y * b,
                 Z = a.Z * b
+            };
+        }
+
+        public static Double3 operator *(double a, Int3 b)
+        {
+            return new Double3
+            {
+                X = a * b.X,
+                Y = a * b.Y,
+                Z = a * b.Z
             };
         }
 

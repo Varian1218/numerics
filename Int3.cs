@@ -25,6 +25,8 @@ namespace Numerics
             Z = 1
         };
 
+        public static readonly Int3[] FourStep;
+
         public static readonly Int3 Left = new()
         {
             X = -1,
@@ -56,6 +58,17 @@ namespace Numerics
         public int X;
         public int Y;
         public int Z;
+
+        static Int3()
+        {
+            FourStep = new[]
+            {
+                Back,
+                Forward,
+                Left,
+                Right,
+            };
+        }
 
         public static Int3 operator +(Int3 a, Int3 b)
         {

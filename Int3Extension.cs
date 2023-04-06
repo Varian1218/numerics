@@ -16,7 +16,7 @@ namespace Numerics
 
         public static int SqrMagnitude(this Int3 value)
         {
-            return value.X * value.X + value.Y * value.Y + value.Z + value.Z;
+            return value.X * value.X + value.Y * value.Y + value.Z * value.Z;
         }
     }
 }
